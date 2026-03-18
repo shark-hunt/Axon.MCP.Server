@@ -1,0 +1,65 @@
+site_name: Axon MCP Server
+site_url: https://ali-kamali.github.io/Axon.MCP.Server/
+site_description: Model Context Protocol (MCP) Server for AI IDEs
+site_author: Ali Kamali
+
+repo_name: ali-kamali/Axon.MCP.Server
+repo_url: https://github.com/ali-kamali/Axon.MCP.Server
+edit_uri: edit/public-release/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Product Vision: product_vision.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Data Models: architecture/data_models.md
+      - Infrastructure: architecture/infrastructure.md
+      - Infrastructure Analysis: architecture/infrastructure_analysis.md
+  - API Reference:
+      - MCP Tools: api/mcp_tools.md
+      - REST API: api/rest_api.md
+  - Guides:
+      - Setup: guides/setup.md
+      - Development: guides/development.md
+      - Deployment: guides/deployment.md
+      - Security: guides/security.md
+  - Reference:
+      - Configuration: reference/configuration.md
+      - Troubleshooting: reference/troubleshooting.md
+  - Roadmap: AXON_ANALYSIS_AND_ROADMAP.md
