@@ -250,4 +250,3 @@ def downgrade() -> None:
         ALTER COLUMN language TYPE languageenum 
         USING language::languageenum
     """)
-

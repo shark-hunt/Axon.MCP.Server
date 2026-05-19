@@ -146,4 +146,3 @@ async def get_db_session() -> AsyncSession:
     """
     pool = await get_connection_pool()
     return await pool.get_session()
-
